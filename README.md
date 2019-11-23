@@ -137,8 +137,8 @@ Body:
 
 ```
   {
-    "name": "Aqui vai seu nome orbigadotiro, caso queira alterar mande um novo",
-    "email": "Aqui vai seu email obrigatorio, caso queira alterar mande um novo caso",
+    "name": "Aqui vai seu nome obrigatório, caso queira alterar mande um novo",
+    "email": "Aqui vai seu email obrigatório, caso queira alterar mande um novo caso",
     "oldPassword": "Aqui vai sua senha antiga caso pre queira mudar",
     "password": "Aqui vai sua senha nova",
     "confirmPassword": "Aqui vai sua senha nova de novo para confirmação"
