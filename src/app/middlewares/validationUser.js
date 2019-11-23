@@ -20,8 +20,10 @@ export const validationStoreUserMiddleware = async (req, res, next) => {
 
 export const validationUpdateUserMiddleware = async (req, res, next) => {
   const schema = Yup.object().shape({
-    name: Yup.string().required,
-    email: Yup.string().email().required,
+    name: Yup.string().required(),
+    email: Yup.string()
+      .email()
+      .required(),
     oldPassword: Yup.string().min(6),
     password: Yup.string()
       .min(6)

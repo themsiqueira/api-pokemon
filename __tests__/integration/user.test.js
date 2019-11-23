@@ -38,7 +38,7 @@ describe('User', () => {
     const auth = await request(app)
       .post('/api/login')
       .send({
-        email: 'naodevecriarduasvezes@gmail.com',
+        email: 'nomeparateste@gmail.com',
         password: 'senhateste@2019',
       })
       .expect(200);
@@ -48,7 +48,7 @@ describe('User', () => {
       .set('Authorization', 'Bearer ' + auth.body.token)
       .send({
         name: 'Não deve criar duas vezes',
-        email: 'nomeparateste@gmail.com',
+        email: 'naodevecriarduasvezes@gmail.com',
       })
       .expect(400);
 
@@ -59,7 +59,7 @@ describe('User', () => {
     const auth = await request(app)
       .post('/api/login')
       .send({
-        email: 'naodevecriarduasvezes@gmail.com',
+        email: 'nomeparateste@gmail.com',
         password: 'senhateste@2019',
       })
       .expect(200);
@@ -69,7 +69,7 @@ describe('User', () => {
       .set('Authorization', 'Bearer ' + auth.body.token)
       .send({
         name: 'Não deve criar duas vezes',
-        email: 'naodevecriarduasvezes@gmail.com',
+        email: 'nomeparateste@gmail.com',
         oldPassword: 'senhateste@2018',
         password: 'senhateste@2020',
         confirmPassword: 'senhateste@2020',
@@ -83,7 +83,7 @@ describe('User', () => {
     const auth = await request(app)
       .post('/api/login')
       .send({
-        email: 'naodevecriarduasvezes@gmail.com',
+        email: 'nomeparateste@gmail.com',
         password: 'senhateste@2019',
       })
       .expect(200);
@@ -93,7 +93,7 @@ describe('User', () => {
       .set('Authorization', 'Bearer ' + auth.body.token)
       .send({
         name: 'Não deve criar duas vezes atualizado',
-        email: 'naodevecriarduasvezes@gmail.com',
+        email: 'nomeparatestenovo@gmail.com',
       })
       .expect(200);
 
