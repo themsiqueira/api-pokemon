@@ -1,0 +1,7 @@
+{
+  "name": "api-pokemon",
+  "version": "0.1.0",
+  "description": "api para gerênciamento de pokemons",
+  "title": "Api Pokemon LiveOn",
+  "url": "http://localhost:3333/api"
+}

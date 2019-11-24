@@ -61,7 +61,9 @@ Abaixo temos alguns comandos úteis para debug, execução e executar testes.
 
   `yarn test` ou `npm run test`
 
-  > Obs: Para rodar os testes você deve configurar o arquivo .env e criar um banco de teste, esse procedimento server para não causar alterações no banco durante os teste.
+  > Obs: Para rodar os testes você deve estar com os container rodando no docker.
+
+  > A documentação também se encontra na pasta public/apidoc
 
 # Rotas
 
@@ -266,7 +268,7 @@ Body:
 
 ```
   {
-    "name": "nome do pokemon",
+    "specie": "specie do pokemon",
     "toUpdate": {
       "type": "aqui vai o tipo do seu pokemon",
       "specie": "Aqui vai a especie do seu pokemon",
@@ -318,5 +320,4 @@ Retorno:
   }
 ```
 
-Obs: Um pokemon so pode ser editado ou deletado por quem o cadastrou, para poder usar o serviço
-é necessário ter um usuário e estar autenticado.
+> Obs: Um pokemon so pode ser editado ou deletado por quem o cadastrou, para poder usar o serviço é necessário ter um usuário e estar autenticado.
