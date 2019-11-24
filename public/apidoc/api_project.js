@@ -1,0 +1,16 @@
+define({
+  "name": "api-pokemon",
+  "version": "0.1.0",
+  "description": "api para gerênciamento de pokemons",
+  "title": "Api Pokemon LiveOn",
+  "url": "http://localhost:3333/api",
+  "sampleUrl": false,
+  "defaultVersion": "0.0.0",
+  "apidoc": "0.3.0",
+  "generator": {
+    "name": "apidoc",
+    "time": "2019-11-24T13:14:26.496Z",
+    "url": "http://apidocjs.com",
+    "version": "0.18.0"
+  }
+});
