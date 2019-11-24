@@ -61,7 +61,14 @@ Abaixo temos alguns comandos úteis para debug, execução e executar testes.
 
   `yarn test` ou `npm run test`
 
-  > Obs: Para rodar os testes você deve estar com os container rodando no docker.
+  > Obs: Para rodar os testes você deve estar com os containers rodando no docker e criar um banco test no postgres, e configurar o arquivo .env conforme abaixo.
+
+  ```
+    DB_NAME=test
+
+    MONGO_URL=mongodb://192.168.99.100:27017/test
+
+  ```
 
   > A documentação também se encontra na pasta public/apidoc
 
